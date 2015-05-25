@@ -2,7 +2,7 @@ package ejercicios.repaso;
 
 public class SecuenciaTres {
 
-	/**
+	/** estos son comentarios nuevos
 	 * @param args
 	 */
 	public static void main(String[] args) {
