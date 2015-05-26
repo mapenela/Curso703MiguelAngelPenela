@@ -49,7 +49,10 @@ public class ProcesoJDOM {
 	    // Añadimos un atributo  
 	    nuevolibro.setAttribute("isbn", "xxxx-yyyy");  
 	    padre.addContent(nuevolibro);  
-
+        Element titulo = new Element("titulo");
+        titulo.addContent("Lo que el viento se llevó");
+        nuevolibro.addContent(titulo);
+        
 	    
 	   //SERIALIZO EL DOCUMENT A UN FICHERO DE SALIDA
 	    

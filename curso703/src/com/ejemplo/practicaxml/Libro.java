@@ -55,12 +55,14 @@ public class Libro {
 	@Override  
 	public String toString() {  
 		StringBuilder sb = new StringBuilder(); //tipo de String más rápido en añadir! 
+		
 		sb.append("\nISBN: "+isbn);  
 		sb.append("\nTítulo: "+titulo);  
 		sb.append("\nAutor: "+autor);  
 		sb.append("\nAño: "+anyo);  
 		sb.append("\nEditorial: "+editorial);  
 
+		
 		return sb.toString();  
 	}  
 
