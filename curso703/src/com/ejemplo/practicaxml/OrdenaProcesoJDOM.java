@@ -61,55 +61,50 @@ public class OrdenaProcesoJDOM {
 		//GENERO NUEVO DOCUMENTO
 		
 		// RECORRER EL ARRAY LIST libroscopia Y TRATAR LIBRO A LIBRO
+		
 		Element padre = documentJDOM.getRootElement();
-		Element todosloslibros = new Element("libros");
-		padre.addContent(todosloslibros);  
-		libroscopia.size();		
+		Element e_raiz = new Element("libros");				
+		padre.addContent(e_raiz);		
+		
 		for (int x=0;x<libroscopia.size();x++) {
 			Libro unlibro = libroscopia.get(x);
-			//System.out.println(unlibro);			
-			int y;
-			if (x > 4) {
-			    y = x % 5;
-			} else {
-			    y = x;
-			}				
+			//System.out.println(unlibro);						
 				Element nuevolibro = new Element("libro");  
-				if (y==0) {					
+							
 					//aqui trato el isbn				    
 				    // Añadimos un atributo				    
 					nuevolibro.setAttribute("isbn",unlibro.getIsbn()); 					
 					padre.addContent(nuevolibro);  
-				}
-				if (y==1) {
+				
+				
 					//aqui trato el titulo					
 					Element titulo = new Element("titulo");
 					titulo.addContent(unlibro.getTitulo());
 					nuevolibro.addContent(titulo);
 					padre.addContent(nuevolibro); 
-				}
-				if (y==2) {
+				
+				
 					//aqui trato el autor
 					Element autor = new Element("autor");
 					autor.addContent(unlibro.getAutor());
 					nuevolibro.addContent(autor);
 					padre.addContent(nuevolibro); 
-				}
-				if (y==3) {
+				
+				
 					//aqui trato el año
 					Element anyo = new Element("anyo");
 					anyo.addContent(unlibro.getAnyo());
 					nuevolibro.addContent(anyo);
 					padre.addContent(nuevolibro); 
-				}
-				if (y==4) {
+				
+				
 					//aqui trato el editorial
 					Element editorial = new Element("editorial");
 					editorial.addContent(unlibro.getEditorial());
 					nuevolibro.addContent(editorial);
-					padre.addContent(nuevolibro); 
-				}				
-			
+					
+					//e_raiz.addContent(nuevolibro);
+					padre.addContent(nuevolibro); 										
 		}
 		System.out.println(padre);
 	    // Creamos una nueva etiqueta  
