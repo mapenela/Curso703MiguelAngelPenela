@@ -1,6 +1,6 @@
-package com.ejemplo.jdbc;
+package com.ejemplo.dao;
 
-public class Empleado {
+public class EmpleadoDTO {
 	private int id;
 	private String firstname;
 	private String lastname;
@@ -12,7 +12,7 @@ public class Empleado {
 	private int commision;
 	private int manager_id;
 	private int department_id;
-	public Empleado(int id, String firstname, String lastname, String email,
+	public EmpleadoDTO(int id, String firstname, String lastname, String email,
 			String phonenumber, String hire_date, String job_id, int salary,
 			int commision, int manager_id, int department_id) {
 		super();
@@ -103,5 +103,4 @@ public class Empleado {
 		
 		return cadena_que_representa_a_un_empleado;
 	}
-	
 }
