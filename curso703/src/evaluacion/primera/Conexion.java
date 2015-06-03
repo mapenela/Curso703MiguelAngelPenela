@@ -1,5 +1,4 @@
-package com.ejemplo.jdbc;
-
+package evaluacion.primera;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
