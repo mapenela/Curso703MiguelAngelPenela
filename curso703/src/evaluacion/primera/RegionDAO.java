@@ -60,7 +60,7 @@ public class RegionDAO {
 		return lista_regiones;
 		
 	}
-	public static List<RegionDTO> ConsultaRegion () throws SQLException
+	public static List<RegionDTO> ConsultaRegion(int region_ID) throws SQLException
 	{		
 		List<RegionDTO> lista_regiones = null;
 		Connection conexion = null;
@@ -93,7 +93,7 @@ public class RegionDAO {
 		return lista_regiones;
 		
 	}
-	public static List<RegionDTO> InsertarRegion () throws SQLException
+	public static List<RegionDTO> InsertarRegion (int region_ID,String region_Name) throws SQLException
 	{		
 		List<RegionDTO> lista_regiones = null;
 		Connection conexion = null;

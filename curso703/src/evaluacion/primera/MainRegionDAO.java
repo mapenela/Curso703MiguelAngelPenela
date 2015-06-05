@@ -26,7 +26,7 @@ public class MainRegionDAO {
 			 //************************
 			 // obtener una region ****
 			//*************************
-			List<RegionDTO> lista_region = RegionDAO.ConsultaRegion();
+			List<RegionDTO> lista_region = RegionDAO.ConsultaRegion(1);
 			System.out.println(lista_region);
 			
 			
@@ -40,7 +40,7 @@ public class MainRegionDAO {
 			  //*************************
 			 // insertar una region *****
 			//***************************
-			List<RegionDTO> lista_regiones = RegionDAO.InsertarRegion();
+			List<RegionDTO> lista_regiones = RegionDAO.InsertarRegion(5,"Africa");
 			System.out.println(lista_regiones);
 			
 			
