@@ -51,8 +51,8 @@ public class MainIber
     	
     	//Me creo el POJO
     	Region region = new Region();
-    	region.setRegion_id(850);;
-    	region.setRegion_name("Antartida");
+    	region.setRegion_id(850);
+    	region.setRegion_name("Australia");
     	
     	
     	Transaction transaction = null;
@@ -60,7 +60,7 @@ public class MainIber
     	try 
     	{
     		transaction = session.beginTransaction();
-    		session.save(region);
+    		session.update(region);
     		transaction.commit();//si todo ha ido bien, persisto los cambio, los hago de verdad, no en la copia de la BD
     	}
     	catch (Exception e)
